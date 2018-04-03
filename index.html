@@ -22,15 +22,15 @@
 
 
 		let numbers = {
-          x: 4,
-          y: 2 
-        }
+                   x: 4,
+                   y: 2 
+                }
         
-        let count = function () {
-         return this.x + this.y;
-        }
+                let count = function () {
+                   return this.x + this.y;
+                }
 
-         count.bind(numbers);
+                count.bind(numbers)();
          
 	</script>
 </body>
