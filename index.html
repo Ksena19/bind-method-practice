@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bind method JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person = {
+			name: 'Alex'
+		}
+
+		var person1 = {
+			name: 'Ksena'
+		}
+
+		function returnName(){
+			return this.name;
+		}
+
+		returnName.bind(person1)();
+
+
+		let numbers = {
+          x: 4,
+          y: 2 
+        }
+        
+        let count = function () {
+         return this.x + this.y;
+        }
+
+         count.bind(numbers);
+         
+	</script>
+</body>
+</html>
